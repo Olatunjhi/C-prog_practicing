@@ -1,11 +1,5 @@
 #include "HORLA.h"
 
-struct node
-{
-	int age;
-	struct node *next;
-};
-
 int main(void)
 {
 	struct node *nodeA, *nodeB, *nodeC, *nodeD;
@@ -32,6 +26,12 @@ int main(void)
 
 	/*creating the head for the nodes */
 	head = nodeA;
+	
+	/*call function to insert new node at the begining */
+	//insert_begin(&head, 5);
+	
+	/* call function ro insert new node to the wnd */
+	insert_end(&head, 5);
 
 	/*creating temporal pointer for head */
 	temp = head;
